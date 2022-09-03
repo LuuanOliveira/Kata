@@ -40,3 +40,14 @@ body {
     padding: 2px 4px;
     border-radius: 3px;
 }
+
+li {
+    border: 1px solid;
+    padding: 15px;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

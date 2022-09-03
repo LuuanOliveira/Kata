@@ -1,5 +1,6 @@
 import React from 'react';
 import BuscadorService from './service/buscador.service';
+import '../static/style.css';
 
 export default function App() {
   const [carregar, definirCarregamento] = React.useState(false);
@@ -36,7 +37,7 @@ export default function App() {
   } else {
     return (
         <div> 
-          <input type="text" onKeyUp={buscarPorChave} placeholder="Buscar por Autor, Título ou ISBN" />
+          <input type="text" onKeyUp={buscarPorChave} placeholder="Buscar por Autor, Título ou ISBN" className="busca"/>
           <ul>
             {items.map(item => (
               <li key={item.isbn}>
